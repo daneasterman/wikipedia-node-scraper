@@ -16,9 +16,7 @@ var wars = [
 "Operation_Pillar_of_Defense"
 ];
 
-// app.get('/returned', function (req, res) {
 let urls = [];
-// let warData = [];
 
   for(var i = 0; i < wars.length; i++) {
     urls.push("https://en.wikipedia.org/wiki/" + wars[i]);
