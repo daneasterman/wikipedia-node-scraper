@@ -6,7 +6,7 @@ This project includes a node web scraper and a timeline UI "sub-project" to crea
 
 ### How does this work?
 
-The code scrapes Wikipedia by programmatically navigating to each link in an array of links and extracting the title, first paragraph and first thumbnail image of the article. 
+The code scrapes Wikipedia by programmatically navigating to each link in an array of links and extracting the title, first paragraph and first thumbnail image of each article. 
 
 This generates a neatly formatted JSON file which is saved to the hard disk so that I am not constantly "hitting" the Wikipedia server and placing too much strain on the site's resources.
 
@@ -35,7 +35,7 @@ If I have time, eventually the best practice approach will be to move away from 
 
 ### How do I run this?
 
-**To run the scraper:** once your links are ready, to run the web scraper simply type this in your console / terminal at the root level of the project folder:
+**To run the scraper:** once your links are ready, simply type this in your console / terminal at the root level of the project folder:
 
 `node app-promise.js`
 
@@ -50,7 +50,7 @@ Instead, the easiest way on a Mac computer is to use the pre-bundled python simp
 
 Then go to `localhost:8000` in your browser.
 
-### What makes this code unique?
+### Technical problem-solving
 
 The major challenge I encountered was that each time you make a "request" to each link in Wikipedia, the data gets returned asynchronously. 
 
